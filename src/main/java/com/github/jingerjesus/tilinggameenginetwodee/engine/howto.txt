@@ -1,0 +1,2 @@
+- override the `config()` method in Driver to configure window size and other things
+that i will think of.
