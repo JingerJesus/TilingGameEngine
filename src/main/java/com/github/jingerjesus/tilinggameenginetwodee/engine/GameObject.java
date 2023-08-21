@@ -15,6 +15,11 @@ public class GameObject {
         sprite = null;
     }
 
+    public GameObject(Sprite s) {
+        x=0;y=0;
+        sprite = s;
+    }
+
     public void setSprite(Sprite i) {
         sprite = i;
     }
@@ -25,4 +30,12 @@ public class GameObject {
 
     public int getX() {return x;}
     public int getY() {return y;}
+    public void setX(int i) {
+        x = i;
+        sprite.setX(i);
+    }
+    public void setY(int i) {
+        y = i;
+        sprite.setY(i);
+    }
 }

@@ -11,6 +11,6 @@ public class Tile extends GameObject {
         super(x,y); this.r = r;
     }
     
-    public int getR() {return r;}
+    public int getRadius() {return r;}
 
 }
