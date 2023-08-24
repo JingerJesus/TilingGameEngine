@@ -5,6 +5,7 @@ import com.github.jingerjesus.tilinggameenginetwodee.engine.Driver;
 import com.github.jingerjesus.tilinggameenginetwodee.engine.GameObject;
 import com.github.jingerjesus.tilinggameenginetwodee.engine.Room;
 import com.github.jingerjesus.tilinggameenginetwodee.engine.Sprite;
+import com.github.jingerjesus.tilinggameenginetwodee.engine.keyboard.KeyInput;
 
 public class Game {
     // Declare your game-wide constants here.
@@ -29,6 +30,7 @@ public class Game {
         // First thing you need to do is make a Room and set the Driver's current room to that room. Otherwise, sad.
         // e.g.: Driver.setCurrentRoom(new Room());
         Driver.setCurrentRoom(titleRoom);
+        KeyInput.setCurrentRoom(titleRoom);
 
         object = new GameObject(
                 new Sprite()
@@ -41,6 +43,7 @@ public class Game {
 
     public static void onUpdate() {
         //Here goes some stuff if you need it. Idk. Maybe it's useful.
+        KeyInput.isPressed("W");
     }
 
 }
